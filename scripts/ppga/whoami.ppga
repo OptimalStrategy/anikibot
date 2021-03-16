@@ -1,0 +1,5 @@
+let args = util:get_args(@);
+let se = api:streamelements()?;
+
+let channel_id = se:channels():channel_id(args.user)?;
+return f"monkaS 👉 your ID is {channel_id}";
